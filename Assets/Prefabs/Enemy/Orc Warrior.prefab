@@ -292,6 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3692baba29afc5348a1c6da305d28f37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyHp: {fileID: 0}
   enemyMovement: {fileID: 1348649547507917037}
   animator: {fileID: 353298002844465519}
   warriorLayer:
@@ -314,6 +315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccf3a363a12ddd44a87a1b872c533b7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 465613849449518989}
   isHurt: 0
   isDead: 0
 --- !u!82 &465613849449518989
