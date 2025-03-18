@@ -75,5 +75,4 @@ public class WarriorHP : MonoBehaviour
     {
         return Random.Range(min, max + 1);
     }
-
 }

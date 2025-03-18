@@ -10,6 +10,7 @@ public class MovementControler : MonoBehaviour
 {
     [Header("WarriorHP")]
     [SerializeField] private WarriorHP warriorHP;
+    [SerializeField] private HealthState healthState;
     [Header("State")]
     [SerializeField] private AttackControler attackControler;
     [SerializeField] private AudioManager audioManager;
@@ -40,6 +41,7 @@ public class MovementControler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        healthState = GetComponentInChildren<HealthState>();
         currentState = movingState.isStanding;
         currentStamina = maxStamina;
         isFacingRight = true;

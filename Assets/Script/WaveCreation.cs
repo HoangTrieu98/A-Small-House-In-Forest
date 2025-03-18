@@ -73,7 +73,10 @@ public class WaveCreation : MonoBehaviour
                 if (eliminatedEnemies == currentWave.numberOfEnemies)
                 {
                     eliminatedEnemies = 0;
-                    StartCoroutine(_TimeToChoose());
+                    if (warriorHP.isAlive())
+                    {
+                        StartCoroutine(_TimeToChoose());
+                    }
                 }
             }
         }

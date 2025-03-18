@@ -15,15 +15,15 @@ public class HealthState : MonoBehaviour
         isDead = false;
     }
 
-    private void StartHurt()
+    public void StartHurt()
     {
         isHurt = true;
         audioManager.PlaySound(WarriorSoundType.Hurt);
     }
 
-    private void EndHurt()
+    public void EndHurt()
     {
-        isHurt = false;
+       isHurt = false;
     }
 
     private void OnDead()
