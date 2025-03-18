@@ -7072,8 +7072,8 @@ MonoBehaviour:
     - {fileID: 1430788652615944000, guid: 08ba54c5b923b5449a59eaefd596b525, type: 3}
     - {fileID: 4077051019011779216, guid: 78e63939f4276a34f8ca74f7dc58163f, type: 3}
     - {fileID: 761000985520586958, guid: 1c4df03112193274a9bddb2ba852897d, type: 3}
-    - {fileID: 3713935907751937554, guid: 68d18dda49b9ec348abf84dad88fceee, type: 3}
-    - {fileID: 5021141713527794421, guid: d859825b57645a34bbc4bc10e2103e93, type: 3}
+    - {fileID: 614517659646048270, guid: 7709908b1c749444e9865a7cf1616c6b, type: 3}
+    - {fileID: 3880313845781681557, guid: 58153d6f7479f654c8faabe94469e703, type: 3}
     numberOfEnemies: 7
     timeToSpawn: 1.5
     coolDownTimer: 0
@@ -7083,6 +7083,7 @@ MonoBehaviour:
     - {fileID: 5021141713527794421, guid: d859825b57645a34bbc4bc10e2103e93, type: 3}
     - {fileID: 761000985520586958, guid: 1c4df03112193274a9bddb2ba852897d, type: 3}
     - {fileID: 4077051019011779216, guid: 78e63939f4276a34f8ca74f7dc58163f, type: 3}
+    - {fileID: 1430788652615944000, guid: 08ba54c5b923b5449a59eaefd596b525, type: 3}
     numberOfEnemies: 8
     timeToSpawn: 1.5
     coolDownTimer: 0
@@ -7121,6 +7122,8 @@ MonoBehaviour:
     - {fileID: 748493447171246236, guid: a8977a5c18f33274a92168c1c71a9776, type: 3}
     - {fileID: 381033257008434941, guid: 5ddc2aa5aad78cd41982bf636e1839aa, type: 3}
     - {fileID: 2698567278379193224, guid: c75a09bd13c97854d8525772550bde09, type: 3}
+    - {fileID: 3713935907751937554, guid: 68d18dda49b9ec348abf84dad88fceee, type: 3}
+    - {fileID: 5021141713527794421, guid: d859825b57645a34bbc4bc10e2103e93, type: 3}
     numberOfEnemies: 10
     timeToSpawn: 1.5
     coolDownTimer: 0
