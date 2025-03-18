@@ -51,6 +51,6 @@ public class HomePageManagement : MonoBehaviour
 
     public void ExitButton()
     {
-
+        Application.Quit();
     }
 }
