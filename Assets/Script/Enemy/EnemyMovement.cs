@@ -128,6 +128,7 @@ public class EnemyMovement : MonoBehaviour
             currentState = EnemyState.isRunning;
             rigid.velocity = directionX * moveSpeed;
             animator.SetBool("isRunning", true);
+            
         }
         else
         {

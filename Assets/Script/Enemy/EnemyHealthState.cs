@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class EnemyHealthState : MonoBehaviour
 {
+        public AudioSource audioSource;
         public bool isHurt;
         public bool isDead;
+
 
         // Start is called before the first frame update
         void Start()
@@ -17,6 +19,8 @@ public class EnemyHealthState : MonoBehaviour
         private void StartHurt()
         {
             isHurt = true;
+            audioSource.Play();
+
         }
 
         private void EndHurt()
@@ -27,5 +31,6 @@ public class EnemyHealthState : MonoBehaviour
         private void OnDead()
         {
             isDead = true;
+            audioSource.Play();
         }
     }
