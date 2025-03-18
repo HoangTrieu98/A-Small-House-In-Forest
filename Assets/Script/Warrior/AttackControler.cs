@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class AttackControler : MonoBehaviour
 {
+    [Header("WarriorHP")]
+    [SerializeField] private WarriorHP warriorHP;
     [Header("State")]
     public bool isAttacking;
     [Header("Componenets")]
@@ -26,18 +28,27 @@ public class AttackControler : MonoBehaviour
 
     private float timeDelay = 0.5f;
     private float coolDownTimer = 0f;
- 
+
+    void Start()
+    {
+        warriorHP = GetComponentInParent<WarriorHP>();
+        movementController = GetComponentInParent<MovementControler>();
+        
+    }
     void Update()
     {
-        coolDownTimer -= Time.deltaTime;
-        bool isRunning = movementController.currentState == movingState.isRunning;
-        foreach(var attack in attackAnimations)
+        if (warriorHP.isAlive())
         {
-            if (Input.GetKeyDown(attack.Key) && CanAttack())
+            coolDownTimer -= Time.deltaTime;
+            bool isRunning = movementController.currentState == movingState.isRunning;
+            foreach (var attack in attackAnimations)
             {
-                isAttacking = true;
-                HandleAttack(attack.Value, isRunning);
-                break;
+                if (Input.GetKeyDown(attack.Key) && CanAttack())
+                {
+                    isAttacking = true;
+                    HandleAttack(attack.Value, isRunning);
+                    break;
+                }
             }
         }
     }

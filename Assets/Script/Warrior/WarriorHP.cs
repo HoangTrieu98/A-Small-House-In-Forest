@@ -35,7 +35,10 @@ public class WarriorHP : MonoBehaviour
     }
     public void TakeDamage(int damage)
     {
-        if (currentHealth < 0)  return;
+        if (currentHealth <= 0)
+        {
+            return;
+        }
         currentHealth -= damage;
         UpdateHealthBar();
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);

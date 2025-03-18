@@ -9494,6 +9494,10 @@ PrefabInstance:
       propertyPath: axeAudio
       value: 
       objectReference: {fileID: 2707539579811318073}
+    - target: {fileID: 1987977782365036806, guid: e745ec6c6d3503445850bd7acb76170d, type: 3}
+      propertyPath: warriorHP
+      value: 
+      objectReference: {fileID: 2117244595}
     - target: {fileID: 2096552182757339331, guid: e745ec6c6d3503445850bd7acb76170d, type: 3}
       propertyPath: m_Layer
       value: 22
